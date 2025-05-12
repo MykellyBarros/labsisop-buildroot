@@ -907,6 +907,7 @@ asmlinkage long sys_statx(int dfd, const char __user *path, unsigned flags,
 			  unsigned mask, struct statx __user *buffer);
 
 asmlinkage long sys_listProcessInfo(long pid, const char __user *buf, int size);
-asmlinkage long sys_listSleepProcesses(char __user *buf, int size);
+asmlinkage long sys_listSleepProcesses(char __user *ubuf, size_t usize);
+
 
 #endif

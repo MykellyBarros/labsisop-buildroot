@@ -6,7 +6,7 @@
   
 asmlinkage long sys_listProcessInfo(long pid, const char __user *buf, int size) {
 	struct task_struct *proces;
-	unsigned char kbuf[256];
+	unsigned char kbuf[512];
 	int bufsz;
 	int ret;
 
